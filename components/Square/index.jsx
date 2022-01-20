@@ -1,6 +1,14 @@
 import styles from "../../styles/Square.module.css";
+
 const Square = (props) => {
-  return <h1 className={styles.square}></h1>;
+  return (
+    <div
+      style={{
+        backgroundColor: props.dark ? "#111" : "#f2f2f2",
+      }}
+      className={styles.square}
+    ></div>
+  );
 };
 
 export default Square;
